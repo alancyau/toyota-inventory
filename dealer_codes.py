@@ -10,8 +10,7 @@ def load_zip(file):
 
 def get_dealer_codes(zip_codes):
     data = []
-    for idx, zip in enumerate(zip_codes):
-        print(idx)
+    for zip in zip_codes:
         response = requests.get(f'https://www.toyota.com/service/tcom/locateDealer/zipCode/{zip}')
         response_json = response.json()
         dealer_codes = [x['code'] for x in response_json['dealers']]  # Filter to dealer codes
