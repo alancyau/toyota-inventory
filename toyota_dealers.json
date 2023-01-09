@@ -1,0 +1,180 @@
+[
+    {
+        "code": "22021",
+        "dealerId": "22021",
+        "name": "St. Cloud Toyota",
+        "address1": "418 2nd Street South",
+        "city": "Waite Park",
+        "state": "MN",
+        "zip": "56387",
+        "phone": "(320) 253-2581",
+        "fax": "(320) 259-1794",
+        "lat": 45.549374,
+        "long": -94.22323,
+        "latitude": 45.549374,
+        "longitude": -94.22323,
+        "url": "https://www.stcloudtoyota.com",
+        "email": "Ecom22021@toyota.com",
+        "regionId": "21",
+        "serviceCenterOnly": false,
+        "tdaId": "CHI10",
+        "phoneNumberService": "(320) 227-8052",
+        "phoneNumberParts": "(320) 227-8052",
+        "hoursSales": "(Sales):[1(08.00>20.00), 2(08.00>20.00), 3(08.00>20.00), 4(08.00>20.00), 5(08.00>20.00), 6(08.00>17.00), 7(-1>-1)]",
+        "hoursService": "(Service):[1(07.30>18.00), 2(07.30>18.00), 3(07.30>18.00), 4(07.30>18.00), 5(07.30>17.30), 6(08.00>16.00), 7(-1>-1)]",
+        "hoursParts": "(Parts):[1(08.00>18.00), 2(08.00>18.00), 3(08.00>18.00), 4(08.00>18.00), 5(08.00>18.00), 6(08.00>12.00), 7(-1>-1)]",
+        "services": [
+            "COMFLT",
+            "CUV",
+            "MST-C",
+            "RTI",
+            "SS",
+            "EXMNT",
+            "TTC",
+            "TPC",
+            "PA"
+        ],
+        "fmpt1": false,
+        "miraiSales": false,
+        "encodedDashedCity": "Waite-Park",
+        "encodedDashedName": "St.-Cloud-Toyota",
+        "region": {
+            "regionCode": 21,
+            "success": false
+        },
+        "tda": {
+            "code": "CHI10",
+            "name": "Chicago Region"
+        },
+        "service": {
+            "phone": "3202278052",
+            "url": "https://www.stcloudtoyota.com/service-center-schedule-service"
+        },
+        "general": {
+            "phone": "(320) 253-2581",
+            "hours": [
+                [
+                    "Closed"
+                ],
+                [
+                    "0730,1700"
+                ],
+                [
+                    "0730,1700"
+                ],
+                [
+                    "0730,1700"
+                ],
+                [
+                    "0730,1700"
+                ],
+                [
+                    "0730,1700"
+                ],
+                [
+                    "0800,1200"
+                ]
+            ]
+        },
+        "dealerAttributes": [
+            "COMFLT",
+            "CUV",
+            "MST-C",
+            "RTI",
+            "SS",
+            "EXMNT",
+            "TTC",
+            "TPC",
+            "PA"
+        ],
+        "pma": false,
+        "fmp": false
+    },
+    {
+        "code": "22038",
+        "dealerId": "22038",
+        "name": "Luther Brookdale Toyota",
+        "address1": "6700 Brooklyn Boulevard",
+        "city": "Brooklyn Center",
+        "state": "MN",
+        "zip": "55429",
+        "phone": "(763) 331-6700",
+        "fax": "(763) 585-0086",
+        "lat": 45.078066,
+        "long": -93.333707,
+        "latitude": 45.078066,
+        "longitude": -93.333707,
+        "url": "https://www.lutherbrookdaletoyota.com",
+        "email": "Ecom22038@toyota.com",
+        "regionId": "21",
+        "serviceCenterOnly": false,
+        "tdaId": "CHI10",
+        "phoneNumberService": "(763) 331-6700",
+        "phoneNumberParts": "(763) 331-6700",
+        "hoursSales": "(Sales):[1(08.30>21.00), 2(08.30>21.00), 3(08.30>21.00), 4(08.30>21.00), 5(08.30>18.00), 6(08.30>18.00), 7(-1>-1)]",
+        "hoursService": "(Service):[1(06.45>21.00), 2(06.45>21.00), 3(06.45>21.00), 4(06.45>21.00), 5(06.45>18.00), 6(08.00>16.00), 7(-1>-1)]",
+        "hoursParts": "(Parts):[1(07.00>00.00), 2(07.00>00.00), 3(07.00>00.00), 4(07.00>00.00), 5(07.00>18.00), 6(08.00>16.00), 7(-1>-1)]",
+        "services": [
+            "COMFLT",
+            "CUV",
+            "MST-C",
+            "RTI",
+            "TTC",
+            "SS",
+            "PA"
+        ],
+        "fmpt1": false,
+        "miraiSales": false,
+        "encodedDashedCity": "Brooklyn-Center",
+        "encodedDashedName": "Luther-Brookdale-Toyota",
+        "region": {
+            "regionCode": 21,
+            "success": false
+        },
+        "tda": {
+            "code": "CHI10",
+            "name": "Chicago Region"
+        },
+        "service": {
+            "phone": "7633316700",
+            "url": "https://www.lutherbrookdaletoyota.com/service-center/schedule-service.htm"
+        },
+        "general": {
+            "phone": "(763) 331-6700",
+            "hours": [
+                [
+                    "Closed"
+                ],
+                [
+                    "0700,2100"
+                ],
+                [
+                    "0700,2100"
+                ],
+                [
+                    "0700,2100"
+                ],
+                [
+                    "0700,2100"
+                ],
+                [
+                    "0700,1800"
+                ],
+                [
+                    "0800,1600"
+                ]
+            ]
+        },
+        "dealerAttributes": [
+            "COMFLT",
+            "CUV",
+            "MST-C",
+            "RTI",
+            "TTC",
+            "SS",
+            "PA"
+        ],
+        "pma": false,
+        "fmp": false
+    }
+]
