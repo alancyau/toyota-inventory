@@ -3,8 +3,8 @@ import haversine as hs
 from haversine import Unit
 
 
-START_COORDINATES = (28.426846,77.088834)
-RADIUS = 10000  # In miles
+START_COORDINATES = (34.0522, -118.2437)
+RADIUS = 20  # In miles
 MODEL = 'car_model'
 
 
@@ -18,7 +18,6 @@ def dealer_distance(dealers):
     return dealers_within_radius
 
 
-
 def load_dealers(file):
     with open(file) as json_file:
         return json.load(json_file)
@@ -27,7 +26,7 @@ def load_dealers(file):
 def main():
     dealers = load_dealers('toyota_dealers.json')
     data = dealer_distance(dealers)
-    print(data)
+    print(len(data))
 
 
 if __name__ == "__main__":
