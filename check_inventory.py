@@ -10,19 +10,24 @@ CAR_MODEL = 'grcorolla'
 CAR_YEAR = 2023
 
 
-def dealer_distance(dealers):
-    dealers_within_radius = []
-    for dealer in dealers:
+def load_dealers(file):
+    with open(file) as json_file:
+        return json.load(json_file)
+
+
+def calc_dealer_distance(dealer_database):
+    dealers_in_radius = []
+    for dealer in dealer_database:
         dealer_coordinates = (dealer['latitude'], dealer['longitude'])
         distance = hs.haversine(START_COORDINATES,dealer_coordinates,unit=Unit.MILES)
         if distance < RADIUS:
-            dealers_within_radius.append(dealer['code'])
-    return dealers_within_radius
+            dealers_in_radius.append(dealer['code'])
+    return dealers_in_radius
 
 
-def get_inventory(filtered_dealers):
+def get_inventory(dealers):
     inventory = []
-    for dealer in filtered_dealers:
+    for dealer in dealers:
     # json objects to the send to the toyota api
         data = {
         "brand": "TOY",
@@ -52,7 +57,8 @@ def get_inventory(filtered_dealers):
         for response in response_array:
             # save selected data to dict
             car = {
-                "dealer": [dealer],
+                "dealer": dealer,
+                "dealer_name": "",
                 "msrp_total": [response["priceInfo"]["totalMSRP"]],
                 "msrp_base": [response["priceInfo"]["totalMSRP"]],
                 "model_title": [response["model"]["title"]],
@@ -60,20 +66,23 @@ def get_inventory(filtered_dealers):
                 "VIN": [response["vin"]]
             }
             inventory.append(car)
-    print(inventory)
+    return inventory
 
 
-def load_dealers(file):
-    with open(file) as json_file:
-        return json.load(json_file)
+def decode_dealer(inventory, dealer_database):
+    print('decoding dealers')
+    for car in inventory:
+        code = car['dealer']
+        for dealer in dealer_database:
+            if code == dealer['code']:
+                car['dealer_name'] = dealer['name']
+    return inventory
 
 
-def main():
-    dealers = load_dealers('toyota_dealers.json')
-    filtered_dealers = dealer_distance(dealers)
-    inventory = get_inventory(filtered_dealers)
-    print(inventory)
-
-
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    dealer_database = load_dealers('toyota_dealers.json')
+    dealers_in_radius = calc_dealer_distance(dealer_database)
+    inventory = get_inventory(dealers_in_radius)
+    inventory = decode_dealer(inventory, dealer_database)
+    for i in inventory:
+        print(f'{i} \n')
