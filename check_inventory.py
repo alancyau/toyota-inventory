@@ -4,8 +4,8 @@ import haversine as hs
 from haversine import Unit
 
 
-START_COORDINATES = (34.0522, -118.2437)
-RADIUS = 200  # In miles
+START_COORDINATES = (44.957801, -93.280363)
+RADIUS = 500  # In miles
 CAR_MODEL = 'grcorolla'
 CAR_YEAR = 2023
 
@@ -70,7 +70,6 @@ def get_inventory(dealers):
 
 
 def decode_dealer(inventory, dealer_database):
-    print('decoding dealers')
     for car in inventory:
         code = car['dealer']
         for dealer in dealer_database:
